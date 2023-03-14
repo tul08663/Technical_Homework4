@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Technical_Homework4
 {
-    public partial class ContentPage2 : System.Web.UI.Page
+    public partial class PetMeds : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

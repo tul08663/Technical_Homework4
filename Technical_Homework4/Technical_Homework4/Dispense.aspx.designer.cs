@@ -10,7 +10,7 @@
 
 namespace Technical_Homework4
 {
-    public partial class ContentPage3
+    public partial class Dispense
     {
     }
 }
