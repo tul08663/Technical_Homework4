@@ -10,7 +10,7 @@
 
 namespace Technical_Homework4
 {
-    public partial class WebForm1
+    public partial class Vet
     {
     }
 }
