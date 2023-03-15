@@ -6,15 +6,29 @@
 <head runat="server">
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="Stylesheets" runat="server">
+        <link rel="stylesheet" href="/Style/styles.css" type="text/css" />
+    </asp:ContentPlaceHolder>
+
 </head>
-<body>
+<body class="e1_3">
     <form id="form1" runat="server">
-        <h1 style="color:crimson">Master Page</h1>
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
+			<div class="e3_2">
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-grow text-danger" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+			    <span  class="e5_2">PetMed</span>
+			    <a href="Home.aspx"><img href="Home.aspx" class="HouseIcon" src="images/house.png" /></a>
+                <a href="Vet.aspx"><img href="Vet.aspx" class="VetIcon" src="images/vet.png" /></a>
+			    <a href="Dispense.aspx"><img href="Dispense.aspx" class="PillIcon" src="images/pill.png" /></a>
+			    <a href="Customer.aspx"><img  class="CustomerIcon" src="images/people.png" /></a>
+			</div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
     </form>
 </body>
 </html>
